@@ -1,0 +1,169 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #050505;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* PHONE */
+.phone {
+  width: 360px;
+  height: 720px;
+  background: black;
+  border-radius: 40px;
+  padding: 10px;
+  box-shadow: 0 0 40px #400;
+}
+
+.screen {
+  height: 100%;
+  background: #0b0b0b;
+  border-radius: 30px;
+  overflow: hidden;
+  color: white;
+  position: relative;
+}
+
+/* LOCKSCREEN */
+.lockscreen {
+  height: 100%;
+  background: radial-gradient(circle at top, #250000, #050000);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.lock-logo {
+  width: 90px;
+  filter: drop-shadow(0 0 15px red);
+}
+
+.lockscreen h1 {
+  margin: 0;
+  letter-spacing: 2px;
+  color: #ff2a2a;
+}
+
+.lockscreen input {
+  width: 75%;
+  padding: 12px;
+  border-radius: 14px;
+  border: none;
+  background: #111;
+  color: white;
+  text-align: center;
+}
+
+.lockscreen button {
+  width: 75%;
+  padding: 12px;
+  border-radius: 16px;
+  background: linear-gradient(180deg, #500, #900);
+  color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.lock-info {
+  font-size: 11px;
+  color: #aaa;
+}
+
+/* HEADER */
+.header {
+  height: 70px;
+  background: linear-gradient(180deg, #140000, #090000);
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  border-bottom: 1px solid #300;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 6px red);
+}
+
+.brand h1 {
+  margin: 0;
+  font-size: 16px;
+  color: #ff2a2a;
+}
+
+.brand span {
+  font-size: 10px;
+  color: #aaa;
+}
+
+.time {
+  margin-left: auto;
+  font-size: 14px;
+}
+
+/* HOME */
+.home {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.app {
+  height: 110px;
+  background: linear-gradient(145deg, #1a1a1a, #0f0f0f);
+  border: 1px solid #300;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.app span {
+  font-size: 13px;
+  margin-top: 8px;
+}
+
+.app:hover {
+  background: #220000;
+  box-shadow: 0 0 10px red;
+}
+
+/* APP VIEW */
+.appview {
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 70px);
+  background: #090909;
+  padding: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+button {
+  background: #500;
+  border: none;
+  padding: 10px;
+  border-radius: 12px;
+  color: white;
+  cursor: pointer;
+}
