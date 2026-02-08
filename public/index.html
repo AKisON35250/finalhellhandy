@@ -1,57 +1,27 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <title>FINAL HELL</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>FINAL HELL Handy</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="phone">
-  <div class="screen">
+<div id="lockscreen">
+  <img src="logo.png" alt="FINAL HELL Logo" class="logo">
+  <h1>FINAL HELL</h1>
+  <input id="username" placeholder="Username" />
+  <input id="password" type="password" placeholder="Passwort" />
+  <button onclick="register()">Registrieren</button>
+  <button onclick="login()">Login</button>
+</div>
 
-    <!-- LOCKSCREEN -->
-    <div class="lockscreen" id="lockscreen">
-      <img src="logo.png" class="lock-logo">
-      <h1>FINAL HELL</h1>
-
-      <input id="username" placeholder="Benutzername">
-      <input id="password" type="password" placeholder="Passwort">
-
-      <button onclick="login()">ENTSPERREN</button>
-
-      <span class="lock-info">Secure Access</span>
-    </div>
-
-    <!-- HANDY -->
-    <div id="phoneUI" class="hidden">
-
-      <!-- HEADER -->
-      <div class="header">
-        <img src="logo.png" class="logo">
-        <div class="brand">
-          <h1>FINAL HELL</h1>
-          <span>Mobile Network</span>
-        </div>
-        <div class="time" id="time">00:00</div>
-      </div>
-
-      <!-- HOME -->
-      <div class="home" id="home">
-        <div class="app" onclick="openApp('dispatch')">🚨<span>Dispatch</span></div>
-        <div class="app" onclick="openApp('funk')">📡<span>Funk</span></div>
-        <div class="app">💬<span>Chat</span></div>
-        <div class="app">⚙️<span>Settings</span></div>
-      </div>
-
-      <!-- APP VIEW -->
-      <div class="appview hidden" id="appview"></div>
-
-    </div>
-
-  </div>
+<div id="phoneUI" class="hidden">
+  <h2>Willkommen!</h2>
+  <p>Hier kommt später Dispatch & Funk</p>
 </div>
 
 <script src="app.js"></script>
 </body>
 </html>
+
